@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
-const BooksList = () => (
+import Book from '../components/Book';
+/* eslint-disable react/prop-types */
+const BooksList = ({ books }) => (
   <div>
     <table>
       <tr>
@@ -9,9 +10,11 @@ const BooksList = () => (
         <th>Title</th>
         <th>Category</th>
       </tr>
-      <tr />
+      {books.map((book) => <Book book={book} key={book.id} />)}
     </table>
   </div>
 );
 
-export default connect()(BooksList);
+const mapStateToProps = (state) => ({ books: state.books });
+
+export default connect(mapStateToProps)(BooksList);

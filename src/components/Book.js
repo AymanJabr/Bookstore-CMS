@@ -8,4 +8,6 @@ const Book = ({ book }) => (
   </tr>
 );
 
+export default Book
+
 
