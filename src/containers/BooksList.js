@@ -1,5 +1,6 @@
 import React from 'react';
-import {connect} from 'redux'
+import { connect } from 'redux';
+
 const BooksList = () => (
   <div>
     <table>
@@ -8,9 +9,7 @@ const BooksList = () => (
         <th>Title</th>
         <th>Category</th>
       </tr>
-      <tr>
-
-      </tr>
+      <tr />
     </table>
   </div>
 );
