@@ -1,11 +1,11 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index'
 
 
-const initialState = {
-    books: [
-        { id: 0, title: 'I am Malala', category: 'Action' }
-    ]
-}
+// const initialState = {
+//     books: [
+//         { id: 0, title: 'I am Malala', category: 'Action' }
+//     ]
+// }
 
 // const bookToRemove = (id) => {
 
@@ -14,7 +14,7 @@ const initialState = {
 export default function appReducer(state = initialState, action) {
     switch (action.type) {
 
-        case 'CREATE_BOOK':
+        case CREATE_BOOK:
 
             return {
                 books: [
@@ -27,7 +27,7 @@ export default function appReducer(state = initialState, action) {
                 ]
             }
 
-        case 'REMOVE_BOOK':
+        case REMOVE_BOOK:
             // let book_to_remove = state.books.filter((book)=> book.id == )
             let newBooks = [...state.books]
             return {
