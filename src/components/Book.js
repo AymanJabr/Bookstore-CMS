@@ -1,4 +1,5 @@
-// eslint-disable
+/* eslint-disable */
+
 const Book = ({ book }) => (
   <tr>
     <td>{book.id}</td>
@@ -6,3 +7,5 @@ const Book = ({ book }) => (
     <td>{book.category}</td>
   </tr>
 );
+
+

@@ -1,4 +1,5 @@
-import appReducer from './books'
-import { createStore } from 'redux'
+import { createStore } from 'redux';
+import appReducer from './books';
 
-export const store = createStore(appReducer)
+const store = createStore(appReducer);
+export default store;

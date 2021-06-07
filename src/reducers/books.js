@@ -1,42 +1,39 @@
-import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index'
+import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
 
-
-// const initialState = {
-//     books: [
-//         { id: 0, title: 'I am Malala', category: 'Action' }
-//     ]
-// }
-
-// const bookToRemove = (id) => {
-
-// }
+const initialState = {
+  books: [
+    { id: Math.random(), title: 'I am Malala', category: 'Action' },
+    { id: Math.random(), title: 'The Survivors', category: 'Horror' },
+    { id: Math.random(), title: 'Ghost Rider', category: 'History' },
+    { id: Math.random(), title: 'Ghost Rider', category: 'Biography' },
+  ],
+};
 
 export default function appReducer(state = initialState, action) {
-    switch (action.type) {
+  const newBooks = [...state.books];
+  switch (action.type) {
+    case CREATE_BOOK:
 
-        case CREATE_BOOK:
+      return {
+        books: [
+          ...state.books,
+          {
+            id: Date.now(),
+            title: action.book.title,
+            category: action.book.category,
+          },
+        ],
+      };
 
-            return {
-                books: [
-                    ...state.books,
-                    {
-                        id: Date.now(),
-                        title: action.book.title,
-                        category: action.book.category
-                    }
-                ]
-            }
+    case REMOVE_BOOK:
+      // let book_to_remove = state.books.filter((book)=> book.id == )
 
-        case REMOVE_BOOK:
-            // let book_to_remove = state.books.filter((book)=> book.id == )
-            let newBooks = [...state.books]
-            return {
+      return {
+        books: newBooks,
 
-                books: newBooks
+      };
 
-            }
-
-        default:
-            return state
-    }
+    default:
+      return state;
+  }
 }
