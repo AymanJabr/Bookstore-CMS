@@ -1,4 +1,4 @@
-
+// eslint-disable
 const Book = ({ book }) => (
   <tr>
     <td>{book.id}</td>
