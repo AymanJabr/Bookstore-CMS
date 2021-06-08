@@ -5,7 +5,6 @@ const initialState = {
 };
 
 export default function appReducer(state = initialState, action) {
-  const newBooks = [...state.books];
   switch (action.type) {
     case CREATE_BOOK:
 
@@ -13,7 +12,7 @@ export default function appReducer(state = initialState, action) {
         books: [
           ...state.books,
           {
-            id: Date.now(),
+            id: action.book.id,
             title: action.book.title,
             category: action.book.category,
           },
@@ -23,8 +22,7 @@ export default function appReducer(state = initialState, action) {
     case REMOVE_BOOK:
 
       return {
-        books: newBooks,
-
+        books: [...state.books.filter((book) => action.book.id !== book.id)],
       };
 
     default:
