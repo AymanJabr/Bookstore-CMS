@@ -1,19 +1,19 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import store from '../store';
 import { actionCreate } from '../actions/index';
 
 const BOOK_CATEGORIES = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
-const BooksForm = () => {
+const BooksForm = ({ createbook }) => {
+  console.log(createbook);
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
 
   const submitForm = (e) => {
     e.preventDefault();
-
-    store.actionCreate()
-
-
+    store.dispatch(actionCreate({ id: Math.random(), title, category }));
+    console.log(category);
   };
 
   const handleTitleChange = (e) => {
@@ -42,9 +42,19 @@ const BooksForm = () => {
       }
       </select>
 
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit" onClick={submitForm} />
     </form>
   );
 };
+
+// const mapDispatchToProps = (dispatch) => ({
+//   createbook: () => dispatch(actionCreate()),
+// });
+
+BooksForm.propTypes = {
+  createbook: PropTypes.func.isRequired,
+};
+
+// export default connect(null, {actionCreate})(BooksForm);
 
 export default BooksForm;
