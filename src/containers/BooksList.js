@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Book from '../components/Book';
-/* eslint-disable react/prop-types */
+
 const BooksList = ({ books }) => (
   <div>
     <table>
@@ -10,11 +11,22 @@ const BooksList = ({ books }) => (
         <th>Title</th>
         <th>Category</th>
       </tr>
-      {books.map((book) => <Book book={book} key={book.id} />)}
+      {books.map((book) => (
+        <Book
+          id={book.id}
+          title={book.title}
+          category={book.category}
+          key={book.id}
+        />
+      ))}
     </table>
   </div>
 );
 
-const mapStateToProps = (state) => ({ books: state.books });
+BooksList.propTypes = {
+  books: PropTypes.instanceOf(Array).isRequired,
+};
+
+const mapStateToProps = (state) => ({ books: state.appReducer.books });
 
 export default connect(mapStateToProps)(BooksList);

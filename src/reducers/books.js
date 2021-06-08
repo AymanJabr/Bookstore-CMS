@@ -26,7 +26,6 @@ export default function appReducer(state = initialState, action) {
       };
 
     case REMOVE_BOOK:
-      // let book_to_remove = state.books.filter((book)=> book.id == )
 
       return {
         books: newBooks,

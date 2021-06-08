@@ -2,8 +2,6 @@ const BOOK_CATEGORIES = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Le
 
 const submitForm = (e) => {
   e.preventDefault();
-  console.log('Form submitted');
-  console.log(e);
 };
 
 const BooksForm = () => (
@@ -21,10 +19,7 @@ const BooksForm = () => (
           </option>
         ))
       }
-      {/* <option value="grapefruit">Grapefruit</option>
-                <option value="lime">Lime</option>
-                <option selected value="coconut">Coconut</option>
-                <option value="mango">Mango</option> */}
+
     </select>
 
     <input type="submit" value="Submit" />
