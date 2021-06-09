@@ -1,5 +1,6 @@
 import BooksForm from '../containers/BooksForm';
 import BooksList from '../containers/BooksList';
+import '../styles.css';
 
 function App() {
   return (
