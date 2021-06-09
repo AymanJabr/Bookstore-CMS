@@ -26,13 +26,7 @@ const BooksList = ({ books, filter }) => {
 
       <CategoryFilter handleFilterChange={handleFilterChange} />
 
-      <table>
-        <tr>
-          <th>Book ID</th>
-          <th>Title</th>
-          <th>Category</th>
-        </tr>
-        {
+      {
         filteredBooks.map((book) => (
           <Book
             id={book.id}
@@ -43,7 +37,6 @@ const BooksList = ({ books, filter }) => {
           />
         ))
 }
-      </table>
     </div>
   );
 };
