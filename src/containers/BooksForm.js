@@ -24,7 +24,7 @@ const BooksForm = () => {
 
   return (
 
-    <form onSubmit={submitForm}>
+    <form onSubmit={submitForm} className="form margin-75">
       <h2 className="add-new">ADD NEW BOOK</h2>
       <input type="text" id="btitle" className="title-input" placeholder="Book Title" name="btitle" value={title} onChange={handleTitleChange} />
 
