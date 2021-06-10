@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <BooksList />
-      <hr className="divide" />
+      <hr className="divide margin-75" />
       <BooksForm />
     </div>
   );

@@ -5,10 +5,30 @@ const Book = ({
 }) => (
 
   <div className="Book">
-    <h3 className="bookCategory">{category}</h3>
-    <h1 className="bookTitle">{title}</h1>
-    <button className="bookRemove" type="button" onClick={() => removeBook(id)}>Remove</button>
-
+    <div className="book-info">
+      <h3 className="bookCategory">{category}</h3>
+      <h1 className="bookTitle">{title}</h1>
+      <p className="author">Philip Unjani</p>
+      <button className="book-buttons" type="button">Commments</button>
+      <span className="separate">|</span>
+      <button className="book-buttons" type="button" onClick={() => removeBook(id)}>Remove</button>
+      <span className="separate">|</span>
+      <button className="book-buttons" type="button">Edit</button>
+    </div>
+    <div className="chart">
+      <div className="chart-graph" />
+      <div className="chart-info">
+        <h1 className="book-percentage">64%</h1>
+        <p className="completed">Completed</p>
+      </div>
+    </div>
+    <div className="book__wrapper_right-info">
+      <div className="current-chapter">CURRENT CHAPTER</div>
+      <h3 className="current-lesson">Chapter 17</h3>
+      <button className="update-progress" type="button" disabled>
+        Update Progress
+      </button>
+    </div>
   </div>
 
 );

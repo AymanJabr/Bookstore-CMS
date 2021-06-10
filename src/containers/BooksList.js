@@ -22,7 +22,7 @@ const BooksList = ({ books, filter }) => {
   }
 
   return (
-    <div className="margin-75">
+    <div className="margin-75 booksform">
 
       <CategoryFilter handleFilterChange={handleFilterChange} />
 

@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-* {
+body {
   color: black;
   background-color: #f5f6fa;
 }
 
 .App {
-  /* overflow-x: hidden; */
+  margin-bottom: 2rem;
 }
 
 .my-navbar {
@@ -36,7 +36,6 @@
 }
 
 .margin-75 {
-  /* width: 75%; */
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -81,8 +80,8 @@
 }
 
 .divide {
-  margin: 40px auto;
-  width: 75%;
+  margin: 40px 100px;
+  width: 987px;
 }
 
 .add-new {
@@ -98,14 +97,14 @@
 
 .title-input {
   margin: 19px 34px 0 0;
-  padding: 13px 300px 13px 17px;
+  padding: 13px 320px 13px 17px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
 }
 
 .category-input {
-  width: 235px;
+  width: 245px;
   height: 45px;
   margin: 19px  0;
   padding: 6px 15px 9px 16px;
@@ -134,16 +133,109 @@
   color: #fff;
 }
 
+.booksform {
+  width: 987px;
+}
+
 .Book {
   background-color: white;
-  padding-left: 27px;
+  padding-left: 20px;
   padding-top: 32px;
   padding-bottom: 28px;
-
-  /* margin-left: 100px; */
   margin-top: 20px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
+  display: grid;
+  width: 987px;
+  grid-template-columns: auto auto auto;
+}
+
+.chart {
+  display: flex;
+}
+
+.chart-graph {
+  width: 68px;
+  height: 68px;
+  border-bottom: 10px solid #e8e8e8;
+  border-right: 10px solid #e8e8e8;
+  border-radius: 50%;
+  border-color: #e8e8e8 #379cf6 #379cf6 #e8e8e8;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.book-percentage {
+  width: 68px;
+  height: 39px;
+  margin: 1px 92px 0 11px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.completed {
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.current-chapter {
+  margin: 1px 58px 0 59px;
+  opacity: 0.5;
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.current-lesson {
+  margin: 7px 109px 4px 59px;
+  font-family: RobotoSlab;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.update-progress {
+  margin: 12px 0 9px 59px;
+  padding: 7px 19px 8px 22px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+
+.book-extra {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .bookCategory {
@@ -173,10 +265,26 @@
   letter-spacing: -0.2px;
 }
 
-.bookRemove {
+.author {
+  margin: 4px 0 0;
+  font-family: RobotoSlab;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.separate {
+  color: rgba(67, 134, 191, 0.2);
+  padding: 0 3px;
+}
+
+.book-buttons {
   background-color: white;
-  margin: 3px 15px 0 0;
-  padding-left: 0;
+  margin: 3px 0 0 0;
   padding-top: 30px;
   font-family: Roboto Slab, sans-serif;
   font-size: 14px;
@@ -191,7 +299,7 @@
 }
 
 ::placeholder {
-  width: 76px;
+  width: 86px;
   height: 19px;
   font-family: Montserrat, sans-serif;
   font-size: 16px;
