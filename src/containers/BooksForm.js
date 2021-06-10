@@ -25,7 +25,7 @@ const BooksForm = () => {
   return (
 
     <form onSubmit={submitForm} className="form margin-75">
-      <h2 className="add-new">ADD NEW BOOK</h2>
+      <h2 className="add-new normal-style">ADD NEW BOOK</h2>
       <input type="text" id="btitle" className="title-input" placeholder="Book Title" name="btitle" value={title} onChange={handleTitleChange} />
 
       <select onChange={handleSelectChange} className="category-input">
@@ -38,7 +38,7 @@ const BooksForm = () => {
       }
       </select>
 
-      <input type="submit" value="ADD BOOK" className="add-book" onClick={submitForm} />
+      <input type="submit" value="ADD BOOK" className="add-book normal-style" onClick={submitForm} />
     </form>
   );
 };
