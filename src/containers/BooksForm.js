@@ -24,24 +24,29 @@ const BooksForm = () => {
 
   return (
 
-    <form onSubmit={submitForm}>
-      <label htmlFor="btitle">
-        Book Title:
-        <input type="text" id="btitle" name="btitle" value={title} onChange={handleTitleChange} />
-      </label>
+    <div>
 
-      <select onChange={handleSelectChange}>
-        {
+      <h2 className="add-new normal-style">ADD NEW BOOK</h2>
+
+      <form onSubmit={submitForm} className="booksForm margin-75">
+        <input type="text" id="btitle" className="title-input" placeholder="Book Title" name="btitle" value={title} onChange={handleTitleChange} />
+
+        <select onChange={handleSelectChange} className="category-input body-category-input">
+
+          <option value="" hidden selected>Category</option>
+          {
         BOOK_CATEGORIES.map((value) => (
-          <option value={value} key={value}>
+          <option value={value} key={value} className="category-value">
             {value}
           </option>
         ))
       }
-      </select>
+        </select>
 
-      <input type="submit" value="Submit" onClick={submitForm} />
-    </form>
+        <input type="submit" value="ADD BOOK" className="add-book normal-style" onClick={submitForm} />
+      </form>
+
+    </div>
   );
 };
 

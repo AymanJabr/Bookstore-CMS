@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  color: black;
+  background-color: #f5f6fa;
+}
+
+.App {
+  margin-bottom: 2rem;
+}
+
+.normal-style {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+.my-navbar {
+  margin: 0 0 38px;
+  padding: 23px 23px 23px 100px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-user {
+  color: #0290ff;
+}
+
+.oval {
+  margin: 0 3vw 0 4px;
+  padding: 14px 20px;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.logo {
+  display: flex;
+  background-color: #fff;
+}
+
+.margin-75 {
+  margin-left: 100px;
+}
+
+.header-book {
+  background-color: #fff;
+  margin: 18px 31px 1px 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.header-categories {
+  background-color: #fff;
+  margin: 18px 0 11px 11px;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1.9px;
+  color: rgba(18, 18, 18, 0.5);
+}
+
+.header {
+  margin: 6px 47px 15px 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: #0290ff;
+  background-color: #fff;
+}
+
+.divide {
+  margin: 40px 100px;
+  width: 987px;
+}
+
+.add-new {
+  color: #888;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  margin-left: 100px;
+}
+
+.title-input {
+  margin: 19px 34px 19px 0;
+  padding: 13px 320px 13px 17px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  flex-grow: 2;
+}
+
+.category-input {
+  width: 245px;
+  height: 45px;
+  padding: 6px 15px 9px 16px;
+  color: #c4c4c4;
+  font-size: 16px;
+  flex-grow: 1;
+  background-color: #fff;
+}
+
+.body-category-input {
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  margin: 19px 0;
+}
+
+.header-category-input {
+  margin-top: 4px;
+  padding: 6px 15px 9px 16px;
+  border: none;
+}
+
+.add-book {
+  width: 150px;
+  margin: 19px 0 19px 34px;
+  padding: 12.8px 19px 14.2px 22px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  font-family: Roboto Slab, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+  flex-grow: 1;
+  color: #fff;
+}
+
+.booksForm {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 89%;
+  justify-content: space-between;
+}
+
+.Book {
+  background-color: white;
+  padding-left: 20px;
+  padding-top: 32px;
+  padding-bottom: 28px;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  display: flex;
+  width: 88vw;
+  justify-content: space-around;
+}
+
+.chart {
+  display: flex;
+}
+
+.chart-graph {
+  width: 68px;
+  height: 68px;
+  border-bottom: 10px solid #e8e8e8;
+  border-right: 10px solid #e8e8e8;
+  border-radius: 50%;
+  border-color: #e8e8e8 #379cf6 #379cf6 #e8e8e8;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.book-percentage {
+  width: 68px;
+  height: 39px;
+  margin: 1px 92px 0 11px;
+  font-family: Montserrat, sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.completed {
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.current-chapter {
+  margin: 1px 58px 0 59px;
+  opacity: 0.5;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.current-lesson {
+  margin: 7px 109px 4px 59px;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.update-progress {
+  margin: 12px 0 9px 59px;
+  padding: 7px 19px 8px 22px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+
+.book-extra {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bookCategory {
+  background-color: white;
+  color: #121212;
+  margin: 0 39px 0 0;
+  opacity: 0.5;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+.bookTitle {
+  background-color: white;
+  color: #121212;
+  margin: 3px 323px 0 0;
+  font-family: Roboto Slab, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+}
+
+.author {
+  margin: 4px 0 0;
+  font-family: RobotoSlab, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.separate {
+  color: rgba(67, 134, 191, 0.2);
+  padding: 0 3px;
+}
+
+.book-buttons {
+  background-color: white;
+  margin: 3px 0 0 0;
+  padding-top: 30px;
+  font-family: Roboto Slab, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: normal;
+  color: #4386bf;
+  border: none;
+  cursor: pointer;
+}
+
+::placeholder {
+  width: 86px;
+  height: 19px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
