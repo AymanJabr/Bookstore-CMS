@@ -112,7 +112,6 @@ body {
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   margin: 19px 0;
-
 }
 
 .header-category-input {
@@ -120,8 +119,6 @@ body {
   padding: 6px 15px 9px 16px;
   border: none;
 }
-
-
 
 .add-book {
   width: 150px;
@@ -144,8 +141,6 @@ body {
   flex-wrap: nowrap;
   width: 89%;
   justify-content: space-between;
-  align-items: e;
-
 }
 
 .Book {
