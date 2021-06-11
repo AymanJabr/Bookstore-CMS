@@ -29,8 +29,8 @@ body {
 }
 
 .oval {
-  margin: 0 0 0 4px;
-  padding: 14px;
+  margin: 0 3vw 0 4px;
+  padding: 14px 20px;
   border: solid 1px #e8e8e8;
   border-radius: 50%;
   background-color: #fff;
@@ -101,15 +101,27 @@ body {
 .category-input {
   width: 245px;
   height: 45px;
-  margin: 19px 0;
   padding: 6px 15px 9px 16px;
-  border-radius: 4px;
-  border: solid 1px #e8e8e8;
   color: #c4c4c4;
   font-size: 16px;
   flex-grow: 1;
   background-color: #fff;
 }
+
+.body-category-input {
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  margin: 19px 0;
+
+}
+
+.header-category-input {
+  margin-top: 4px;
+  padding: 6px 15px 9px 16px;
+  border: none;
+}
+
+
 
 .add-book {
   width: 150px;

@@ -22,22 +22,35 @@ const BooksList = ({ books, filter }) => {
   }
 
   return (
-    <div className="margin-75 booksform">
+    <div>
+      <div className="my-navbar">
+        <div className="logo">
+          <h1 className="header normal-style">Bookstore CMS</h1>
+          <span className="header-book normal-style">BOOKS</span>
+          <CategoryFilter className="header-categories normal-style" handleFilterChange={handleFilterChange} />
+        </div>
+        <div className="oval">
+          <i className="far fa-user" />
+        </div>
+      </div>
 
-      <CategoryFilter handleFilterChange={handleFilterChange} />
+      <div className="margin-75 booksform">
 
-      {
-        filteredBooks.map((book) => (
-          <Book
-            id={book.id}
-            title={book.title}
-            category={book.category}
-            key={book.id}
-            removeBook={handleBookRemove}
-          />
-        ))
-}
+        {
+          filteredBooks.map((book) => (
+            <Book
+              id={book.id}
+              title={book.title}
+              category={book.category}
+              key={book.id}
+              removeBook={handleBookRemove}
+            />
+          ))
+        }
+      </div>
+
     </div>
+
   );
 };
 

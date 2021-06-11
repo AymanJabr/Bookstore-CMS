@@ -4,7 +4,10 @@ const BOOK_CATEGORIES = ['ALL', 'Action', 'Biography', 'History', 'Horror', 'Kid
 
 const CategoryFilter = ({ handleFilterChange }) => (
   <form className="form">
-    <select onChange={handleFilterChange} className="category-input ">
+    <select onChange={handleFilterChange} className="header-category-input category-input">
+
+      <option value="" hidden selected>CATEGORIES</option>
+
       {
                 BOOK_CATEGORIES.map((value) => (
                   <option value={value} key={value}>

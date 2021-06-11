@@ -31,7 +31,7 @@ const BooksForm = () => {
       <form onSubmit={submitForm} className="booksForm margin-75">
         <input type="text" id="btitle" className="title-input" placeholder="Book Title" name="btitle" value={title} onChange={handleTitleChange} />
 
-        <select onChange={handleSelectChange} className="category-input">
+        <select onChange={handleSelectChange} className="category-input body-category-input">
 
           <option value="" hidden selected>Category</option>
           {
