@@ -43,7 +43,6 @@ body {
 
 .margin-75 {
   margin-left: 100px;
-  margin-right: 100px;
 }
 
 .header-book {
@@ -87,31 +86,34 @@ body {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: -0.18px;
+  margin-left: 100px;
 }
 
 .title-input {
-  margin: 19px 34px 0 0;
+  margin: 19px 34px 19px 0;
   padding: 13px 320px 13px 17px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: #fff;
+  flex-grow: 2;
 }
 
 .category-input {
   width: 245px;
   height: 45px;
-  margin: 19px  0;
+  margin: 19px 0;
   padding: 6px 15px 9px 16px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   color: #c4c4c4;
   font-size: 16px;
+  flex-grow: 1;
   background-color: #fff;
 }
 
 .add-book {
   width: 150px;
-  margin: 19px 0 0 34px;
+  margin: 19px 0 19px 34px;
   padding: 12.8px 19px 14.2px 22px;
   border-radius: 3px;
   background-color: #0290ff;
@@ -121,11 +123,17 @@ body {
   font-weight: bold;
   letter-spacing: 0.5px;
   text-align: center;
+  flex-grow: 1;
   color: #fff;
 }
 
-.booksform {
-  width: 987px;
+.booksForm {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 89%;
+  justify-content: space-between;
+  align-items: e;
+
 }
 
 .Book {
@@ -136,9 +144,9 @@ body {
   margin-top: 20px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  display: grid;
-  width: 987px;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  width: 88vw;
+  justify-content: space-around;
 }
 
 .chart {
